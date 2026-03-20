@@ -59,6 +59,7 @@ Crea una función que reciba una lista de enteros (int*) y
 retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
+   /*
    int suma = 0;
    int *actual = first(L);
    while(actual != NULL){
@@ -67,7 +68,8 @@ int sumaLista(List *L) {
       actual = next(L);
    }
    
-   return suma;
+   return suma; */
+   return 0;
 }
 
 /*
@@ -78,8 +80,9 @@ de la lista que sean iguales a elem.
 Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
-/*
+
 void eliminaElementos(List*L, int elem){
+   /*
    int *actual = (int *)first(L);
    while(actual != NULL){
       if(*actual == elem){
@@ -89,8 +92,9 @@ void eliminaElementos(List*L, int elem){
          actual = next(L);
       }
    }
+   */
 }
-*/
+
 /*
 Ejercicio 4.
 La función copia los punteros de la pila P1 en la pila P2.
