@@ -65,3 +65,9 @@ exercises.c:64:11: error: unused variable ‘dato’ [-Werror=unused-variable]
       |           ^~~~
 cc1: all warnings being treated as errors
 677f6fb
+Fri Mar 20 10:55:55 PM UTC 2026: 
+ exercises.c | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+ tests:  3|2
+total_score: 30/70
+6110dae

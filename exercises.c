@@ -10,6 +10,7 @@
 
 //Funciones auxiliares que puedes utilizar para debuggear tus ejercicios
 //NO MODIFICAR
+
 void imprime_lista(List *L) {
    int *dato;
    dato = (int*)first(L);
@@ -59,13 +60,12 @@ retorne la suma de sus elementos.
 */
 int sumaLista(List *L) {
    int suma = 0;
-   
-   while(first(L) != NULL){
-      int dato = *((int *) first(L))
+   int *actual = first(L);
+   while(actual != NULL){
+      int dato = *((int *)first(L));
       suma += dato;
-      next(L);
+      actual = next(L);
    }
-   
    
    return suma;
 }
