@@ -78,11 +78,19 @@ de la lista que sean iguales a elem.
 Asume que popCurrent luego de eliminar un elemento se
 posiciona en el elemento anterior.
 */
-
+/*
 void eliminaElementos(List*L, int elem){
-
+   int *actual = (int *)first(L);
+   while(actual != NULL){
+      if(*actual == elem){
+         popCurrent(L);
+      }
+      else{
+         actual = next(L);
+      }
+   }
 }
-
+*/
 /*
 Ejercicio 4.
 La función copia los punteros de la pila P1 en la pila P2.

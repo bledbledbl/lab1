@@ -71,3 +71,13 @@ Fri Mar 20 10:55:55 PM UTC 2026:
  tests:  3|2
 total_score: 30/70
 6110dae
+Fri Mar 20 11:32:22 PM UTC 2026: 
+ exercises.c | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+Compilation failed
+test.c: In function ‘test_elimina_elemento’:
+test.c:132:5: error: implicit declaration of function ‘eliminaElementos’; did you mean ‘test_elimina_elemento’? [-Wimplicit-function-declaration]
+  132 |     eliminaElementos(L, elem);
+      |     ^~~~~~~~~~~~~~~~
+      |     test_elimina_elemento
+a8ce3e4
