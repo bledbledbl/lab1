@@ -20,3 +20,20 @@ exercises.c:65:12: error: assignment to ‘int’ from ‘int *’ makes integer
    65 |       suma += dato;
       |            ^~
 32fbe16
+Fri Mar 20 10:42:44 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:15: error: dereferencing ‘void *’ pointer [-Werror]
+   63 |    int dato = *(first(L));
+      |               ^~~~~~~~~~~
+exercises.c:63:15: error: void value not ignored as it ought to be
+   63 |    int dato = *(first(L));
+      |               ^
+exercises.c:64:15: error: comparison between pointer and integer [-Werror]
+   64 |    while(dato != NULL){
+      |               ^~
+cc1: all warnings being treated as errors
+47a469b

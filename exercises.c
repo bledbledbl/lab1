@@ -60,7 +60,7 @@ retorne la suma de sus elementos.
 int sumaLista(List *L) {
    int suma = 0;
    
-   int *dato = first(L);
+   int dato = *(first(L));
    while(dato != NULL){
       suma += dato;
       next(L);
