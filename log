@@ -37,3 +37,17 @@ exercises.c:64:15: error: comparison between pointer and integer [-Werror]
       |               ^~
 cc1: all warnings being treated as errors
 47a469b
+Fri Mar 20 10:43:06 PM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘sumaLista’:
+exercises.c:63:15: error: dereferencing ‘void *’ pointer [-Werror]
+   63 |    int dato = *(first(L));
+      |               ^~~~~~~~~~~
+exercises.c:63:15: error: void value not ignored as it ought to be
+   63 |    int dato = *(first(L));
+      |               ^
+cc1: all warnings being treated as errors
+338578e
