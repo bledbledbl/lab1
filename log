@@ -180,3 +180,17 @@ exercises.c:136:10: error: expected expression before ‘}’ token
       |          ^
 cc1: all warnings being treated as errors
 354c49e
+Sun Mar 22 04:40:56 AM UTC 2026: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:132:29: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  132 |             if(apert == '(' && cadena[i] == ')' || apert == '{' && cadena[i] == '}' || apert == '[' && cadena[i] == ']'){
+      |                ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+exercises.c:132:101: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  132 |             if(apert == '(' && cadena[i] == ')' || apert == '{' && cadena[i] == '}' || apert == '[' && cadena[i] == ']'){
+      |                                                                                        ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+1c410cf
