@@ -79,7 +79,6 @@ posiciona en el elemento anterior.
 */
 
 void eliminaElementos(List*L, int elem){
-
    int *actual = (int *)first(L);
    while(actual != NULL){
       if(*actual == elem){
@@ -121,6 +120,24 @@ paraéntesis balanceados. Retorna 1 si están balanceados,
 */
 
 int parentesisBalanceados(char *cadena) {
+   Stack *pila = create_stack();
+   for(int i = 0; cadena[i] != '\0'; i++){
+      if(cadena[i] == '(' || cadena[i] == '{' || cadena[i] == '['){
+         push(pila, cadena[i]);
+      }
+      else if(cadena[i] == ')' || cadena[i] == '}' || cadena[i] == ']'){
+         if(top(pila) != NULL){
+            if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+               pop(pila);
+            }
+            else{
+               return 0;
+            }
+         }
+      }
+   }
+
+   if(top(pila) == NULL) return 1;
    return 0;
 }
 
