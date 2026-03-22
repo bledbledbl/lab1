@@ -144,3 +144,39 @@ exercises.c:136:10: error: expected expression before ‘}’ token
       |          ^
 cc1: all warnings being treated as errors
 e896a93
+Sun Mar 22 04:38:44 AM UTC 2026: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:130:27: error: comparison between pointer and integer [-Werror]
+  130 |             if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+      |                           ^~
+exercises.c:130:69: error: comparison between pointer and integer [-Werror]
+  130 |             if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+      |                                                                     ^~
+exercises.c:130:110: error: comparison between pointer and integer [-Werror]
+  130 |             if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+      |                                                                                                              ^~
+exercises.c:130:76: error: suggest parentheses around ‘&&’ within ‘||’ [-Werror=parentheses]
+  130 |             if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+      |                                                           ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+exercises.c:130:137: error: expected ‘)’ before ‘{’ token
+  130 |             if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+      |                                                          ~                                                                              ^
+      |                                                                                                                                         )
+exercises.c:135:14: error: expected ‘)’ before ‘}’ token
+  135 |             }
+      |              ^
+      |              )
+  136 |          }
+      |          ~    
+exercises.c:130:15: note: to match this ‘(’
+  130 |             if((top(pila) == '(' && cadena[i] == ')') || (top(pila) == '{' && cadena[i] == '}' || (top(pila) == '[' && cadena[i] == ']'){
+      |               ^
+exercises.c:136:10: error: expected expression before ‘}’ token
+  136 |          }
+      |          ^
+cc1: all warnings being treated as errors
+354c49e
